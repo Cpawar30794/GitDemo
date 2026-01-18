@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+
+.dark-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    overflow: hidden;
+    position: static;
+    
+}
+
+/* Style for the logo image */
+.logo-img {
+    float: inline-end;
+    height: auto; /* Set the height of the logo */
+    width: 32px; /* Maintain the aspect ratio */
+    /* Vertically centering is handled by align-items: center on the parent */
+}
+
+
+.dark-navbar ul{
+    list-style-type: none;
+}
+
+.dark-navbar li{
+    float:left;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+
+.dark-navbar input{
+    float: right;
+    display: block;
+    margin-top: 2px;
+    padding: 8px 10px;
+}
+
+.dark-navbar a{
+    display: block;
+    text-align: center;
+    padding: 12px 14px;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.dark-navbar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.dark-navbar a.active{
+    background-color: #04AA60;
+    color: white;
+}
+
+.container{
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 80px;
+    margin: 10px 80px;
+    overflow: hidden;
+}
+
+.left{
+    flex-basis: 50%;
+    justify-content: space-evenly;
+}
+
+.right{
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.left h1{
+    font-size: 3.5vw;
+    margin-bottom: 2vh;
+    color: hsl(0, 2%, 32%);
+    text-align: left;
+    overflow: hidden;
+
+}
+
+.left h2{
+    font-size: 3vw;
+    margin-bottom: 2vh;
+    color: oklab(65.303% -0.09324 -0.06498);
+    text-align: left;
+    overflow: hidden;
+
+}
+
+.left p{
+    font-size: 1.4vw;
+    margin-bottom: 3vh;
+    color: #555;
+    max-width: 35vw;
+    line-height: 1.5;
+    text-align: left;
+    display: flex;
+
+}
+
+.right img{
+    width: 40vw;
+    object-fit: cover;
+}
+
+.left button{
+    padding: 1.3vh 2.5vw;
+    font-size: 1.2vw;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: 0.3s;
+    
+
+}
+.left button:hover {
+    background: #0056c7;
+}
